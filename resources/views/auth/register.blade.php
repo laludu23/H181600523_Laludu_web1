@@ -77,7 +77,7 @@
                             <div class="captcha">
 
                         <span>{!! captcha_img() !!}</span>
-                        <button type="button" class="btn btn-success btn-refresh">refresh</button>
+                        <button type="button" class="btn btn-success btn-refresh"><a style="text-decoration:none;color:white" href="{{route('register')}}">refresh</a></button>
                             </div>
                             <input type="text" id="captcha" class="form-control" placeholder="enter captcha" name="captcha">
                         @if ($errors->has('captcha'))
